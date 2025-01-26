@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список задач</title>
+</head>
+<body>
+    <h1>Мои задачи:</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
